@@ -49,17 +49,11 @@ In case you want to further develop the code or want to make sure that the cruci
 
 Having said that I found it more efficient and intuitive to provide "mock up" data inside 'test.py' (instead of using the random example data in productive.db), because you can make up your own scenarios and test whether the correct result is produced: Are leap years correctly implemented? Ist the sorting of data during today's status update analysis correctly executed? Are the key data longest streak, average streak, total number of streaks, and streak performance score correctly calculated?
 
-Inside 'test.py' all possible manual entries are clearly marked and explained of what to expect. To run 'test.py' I recommend using your favorite IDLE, but you can also run command line.
+Inside 'test.py' all possible manual entries are clearly marked and explained of what to expect. To run 'test.py' I recommend using your favorite IDLE, but you can also run command line - in whatever you feel more nimble ;)
 
 
+Enjoy!
 
 
-
-
-
-
-
-
-
-
-
+All the best,
+Timo
