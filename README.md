@@ -47,7 +47,7 @@ In case you want to further develop the code or want to make sure that the cruci
 5. **weekly_streak_calc_func:** This function produces data for longest weekly streak, average weekly streak, total number of weekly daily streaks, and weekly streak performance score analysis.
 6. **weekly_streak_calc_func(_db):** the same as weekly_streak_calc_func with the only difference that example data is directly taken from the database instead of providing them in the 'test.py' file itself
 
-Having said that I found it more efficient and intuitive to provide "mock data" inside 'test.py' (instead of using the random example data in productive.db), because you can make up your own scenarios and test whether the correct result is produced: Are leap years correctly implemented? Ist the sorting of data during today's status update analysis correctly executed? Are the key data longest streak, average streak, total number of streaks, and streak performance score correctly calculated?
+Having said that I found it more efficient and intuitive to provide "mock up" data inside 'test.py' (instead of using the random example data in productive.db), because you can make up your own scenarios and test whether the correct result is produced: Are leap years correctly implemented? Ist the sorting of data during today's status update analysis correctly executed? Are the key data longest streak, average streak, total number of streaks, and streak performance score correctly calculated?
 
 Inside 'test.py' all possible manual entries are clearly marked and explained of what to expect. To run 'test.py' I recommend using your favorite IDLE, but you can also run command line.
 
