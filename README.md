@@ -32,6 +32,8 @@ The second part of the analytics platform allows the user to immediately know wh
 7. from **datetime** import **datetime** (Basic date and time types)
 8. from **operator** import **itemgetter** (Standard operators as functions)
 9. from **random** import **randrange** (Generate pseudo-random numbers)
+10. import **unittest** (Unit testing framework)
+11. import **io** (Core tools for working with streams)
 
 Since those are all standard libraries a healthy python 3.x installation should be able to run this code. I recommend downloading the folder 'habit_tracker' and saving this folder to a specific location. Then create a shortcut of 'habit_tracker.py' on our desktop to run the application via double clicking the shortcut. The application will be clear about the inputs needed to proceed.
 
