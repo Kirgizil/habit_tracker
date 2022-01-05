@@ -35,7 +35,7 @@ The second part of the analytics platform allows the user to immediately know wh
 10. import **unittest** (Unit testing framework)
 11. import **io** (Core tools for working with streams)
 
-Since those are all standard libraries a healthy python 3.x installation should be able to run this code. I recommend downloading the folder 'habit_tracker' and saving this folder to a specific location. Then create a shortcut of 'habit_tracker.py' on our desktop to run the application via double clicking the shortcut. The application will be clear about the inputs needed to proceed.
+Since those are all standard libraries a healthy python 3.x installation should be able to run this code. I recommend downloading the folder 'habit_tracker' and saving this folder to a specific location. Then create a shortcut of 'habit_tracker.py' on your desktop to run the application via double clicking the shortcut. The application will be clear about the inputs needed to proceed.
 
 # Testing
 In case you want to further develop the code or want to make sure that the crucial parts of the application are running accurate, I put together a 'test.py' file which specifically looks at the following analytics functions:
