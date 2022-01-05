@@ -38,13 +38,13 @@ Since those are all standard libraries a healthy python 3.x installation should 
 # Testing
 In case you want to further develop the code or want to make sure that the crucial parts of the application are running accurate, I put together a 'test.py' file which specifically looks at the following analytics functions:
 
-1. **month_day_func:** This function is used to calculate current streak data of all habits and to only allow record logging (retrospective), editing, and deleting for a specified period.
-2. **week_analytics:** This function is important for calculating the longest streak, the average streak, the total number of streaks, and the streak performance score of all weekly habits. Leap years are taken into account.
-3. **calc_func_day:** This function is important to correctly calculate the length of the latest daily streak and when to check off next to keep current daily streak. Also, triggered motivational phrases up on check off are based on the result of this function.
-4. **cal_func_week:** This function is important to correctly calculate the length of the latest weekly streak and when to check off next to keep current weekly streak. Also, triggered motivational phrases up on check off are based on the result of this function.
-5. **daily_analytics:** This function produces data for longest daily streak, average daily streak, total number of started daily streaks, and daily streak performance score analysis.
-6. **weekly_analytics:** This function produces data for longest weekly streak, average weekly streak, total number of weekly daily streaks, and weekly streak performance score analysis.
-7. **weekly_analytics_from_db:** the same as weekly_analytics with the only difference that example data is directly taken from the database instead of providing them in the test.py file itself
+1. **test_daily_countdown_func:** This function is used to calculate current streak data of all habits and to only allow record logging (retrospective), editing, and deleting for a specified period.
+2. **test_seven_days_upwards_func:** This function is important for calculating the longest streak, the average streak, the total number of streaks, and the streak performance score of all weekly habits. Leap years are taken into account.
+3. **test_current_streak_calc_sorting_func_day:** This function is important to correctly calculate the length of the latest daily streak and when to check off next to keep current daily streak. Also, triggered motivational phrases up on check off are based on the result of this function.
+4. **test_current_streak_calc_sorting_func_week:** This function is important to correctly calculate the length of the latest weekly streak and when to check off next to keep current weekly streak. Also, triggered motivational phrases up on check off are based on the result of this function.
+5. **test_daily_streak_calc_func:** This function produces data for longest daily streak, average daily streak, total number of started daily streaks, and daily streak performance score analysis.
+6. **test_weekly_streak_calc_func:** This function produces data for longest weekly streak, average weekly streak, total number of weekly daily streaks, and weekly streak performance score analysis.
+7. **test_weekly_streak_calc_func_db:** the same as weekly_analytics with the only difference that example data is directly taken from the database instead of providing them in the test.py file itself
 
 Having said that I found it more efficient and intuitive to provide "mock data" inside 'test.py' (instead of using the random example data in productive.db), because you can make up your own scenarios and test whether the correct result is produced: Are leap years correctly implemented? Ist the sorting of data during today's status update analysis correctly executed? Are the key data longest streak, average streak, total number of streaks, and streak performance score correctly calculated?
 
