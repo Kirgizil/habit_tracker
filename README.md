@@ -15,17 +15,50 @@ The goal of this backend application is to ingest **USER** class, **HABIT** clas
 The second part of the analytics platform allows the user to immediately know what habits need to be recorded today. Based on the current timestamp, the application will calculate what habits have been recorded today ("Congratulations...."), which habits must be recorded by the end of the day/week to keep current streak, and for which habits a new streak can only be started. Based on the "current streak analysis" inspirational and motivationaö messages to the user will be triggered. If a user keeps to a daily habit for 3 month the following message is printed to the screen: **'MIND-BOGGLING!!!!! Three Full Month OF Keeping This Habit Makes It A Routine. Do You Feel The Increase In Life Quality?! --> GOLD'**
 
 # How to Install and run the Project
-test
+**The appication comes with the following files:**
+1. habit_tracker.py (main application)
+2. db_modul.py (contains calls to the sqlite3 database)
+3. oop_modul.py (contains all classes used within the application)
+4. productive.db (sqlite3 database file containing one test user (Username='Timo', Password='test') and associated random example data for 5 daily and 5 weekly habits for the entire year 2021)
+5. test.py (the most crucial parts of the application are tested here, see below of how to use this file)
+
+**The following standard libraries are used by the project:**
+1. import sys (Python Runtime Services)
+2. import os (Generic Operating System Services)
+3. import re (Text Processing Services)
+4. import random (Generate pseudo-random numbers)
+5. import getpass (Portable password input)
+6. import sqlite3 (DB-API 2.0 interface for SQLite databases)
+7. from datetime import datetime (Basic date and time types)
+8. from operator import itemgetter (Standard operators as functions)
+9. from random import randrange (Generate pseudo-random numbers)
+
+Since those are all standard libraries a healthy python 3.x installation should be able to run this code. I recommend downloading the folder 'habit_tracker' and saving this folder to a specific location. Then create a shortcut of 'habit_tracker.py' on our desktop to run the application via double clicking the shortcut. The application will be clear about the inputs needed to proceed.
+
+# Testing
+In case you want to further develop the code or want to make sure that the crucial parts of the application are running accurate, I put together a 'test.py' file which specifically looks at the following analytics functions:
+
+1. **month_day_func:** This function is used to calculate current streak data of all habits and to only allow record logging (retrospective), editing, and deleting for a specified period.
+2. **week_analytics:** This function is important for calculating the longest streak, the average streak, the total number of streaks, and the streak performance score of all weekly habits. Leap years are taken into accout.
+3. **calc_func_day:** This function is important to correctly calculate the length of the latest daily streak and when to check off next to keep current daily streak. Also, triggered motivational phrases up on check off are based on the result of this function.
+4. **cal_func_week:** This function is important to correctly calculate the length of the latest weekly streak and when to check off next to keep current weekly streak. Also, triggered motivational phrases up on check off are based on the result of this function.
+5. **daily_analytics:** This function produces data for longest daily streak, average daily streak, total number of started daily streaks, and daily streak performance score analysis.
+6. **weekly_analytics:** This function produces data for longest weekly streak, average weekly streak, total number of weekly daily streaks, and weekly streak performance score analysis.
+7. **weekly_analytics_from_db:** the same as weekly_analytics with the only difference that example data is directly taken from the database instead of providing them in the test.py file itself
+
+Having said that I found it more efficient and intuitive to provide "mock data" inside 'test.py' (instead of using the random example data in productive.db), because you can make up your own scenarios and test whether the correct result is produced: Are leap years correctly implemented? Ist the sorting of data during todays status update analysis correctly excuted? Are the key data longest streak, average streak, total number of streaks, and streak performance score correctly calculated?
+
+Inside 'test.py' all possible manual entries are clearly marked and explained of what to expect. To run 'test.py' I recommend using your favourite IDLE, but you can also run on command line.
 
 
 
 
 
-# How to Use the Project
-test
 
-# Include Credits
-to the community stackoverflow and others
 
-# Include Tests
-test.py
+
+
+
+
+
+
