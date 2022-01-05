@@ -16,22 +16,22 @@ The second part of the analytics platform allows the user to immediately know wh
 
 # How to Install and run the Project
 **The appication comes with the following files:**
-1. habit_tracker.py (main application)
-2. db_modul.py (contains calls to the sqlite3 database)
-3. oop_modul.py (contains all classes used within the application)
-4. productive.db (sqlite3 database file containing one test user (Username='Timo', Password='test') and associated random example data for 5 daily and 5 weekly habits for the entire year 2021)
-5. test.py (the most crucial parts of the application are tested here, see below of how to use this file)
+1. **habit_tracker.py** (main application)
+2. **db_modul.py** (contains calls to the sqlite3 database)
+3. **oop_modul.py** (contains all classes used within the application)
+4. **productive.db** (sqlite3 database file containing one test user (Username='Timo', Password='test') and associated random example data for 5 daily and 5 weekly habits for the entire year 2021)
+5. **test.py** (the most crucial parts of the application are tested here, see below of how to use this file)
 
 **The following standard libraries are used by the project:**
-1. import sys (Python Runtime Services)
-2. import os (Generic Operating System Services)
-3. import re (Text Processing Services)
-4. import random (Generate pseudo-random numbers)
-5. import getpass (Portable password input)
-6. import sqlite3 (DB-API 2.0 interface for SQLite databases)
-7. from datetime import datetime (Basic date and time types)
-8. from operator import itemgetter (Standard operators as functions)
-9. from random import randrange (Generate pseudo-random numbers)
+1. import **sys** (Python Runtime Services)
+2. import **os** (Generic Operating System Services)
+3. import **re** (Text Processing Services)
+4. import **random** (Generate pseudo-random numbers)
+5. import **getpass** (Portable password input)
+6. import **sqlite3** (DB-API 2.0 interface for SQLite databases)
+7. from **datetime** import **datetime** (Basic date and time types)
+8. from **operator** import **itemgetter** (Standard operators as functions)
+9. from **random** import **randrange** (Generate pseudo-random numbers)
 
 Since those are all standard libraries a healthy python 3.x installation should be able to run this code. I recommend downloading the folder 'habit_tracker' and saving this folder to a specific location. Then create a shortcut of 'habit_tracker.py' on our desktop to run the application via double clicking the shortcut. The application will be clear about the inputs needed to proceed.
 
