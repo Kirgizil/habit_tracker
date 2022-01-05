@@ -1,5 +1,5 @@
 # Backend Habit Tracker Application
-This is my very first piece of code specifically generated due to mandatory unversity classes for upload to github - and there it is ;)
+This is my very first piece of code specifically generated for upload to github due to mandatory unversity classes - and there it is ;)
 
 This exercise taught me how to implement functional and object orientated programming paradigms into a modern application backend with python. I AM proud of what I have developed within 3-4 weeks over X-mas 2021, but of course I am sure this is not the most efficient and performant code available on this topic. For the more advanced students this might even be an insult on how python code should be looking like, and I apologize deeply for this insult... Anyway, I hope at least my tutor will see the upsides on my efforts, and I will appreciate feedback from anyone to help me produce better code in the future.
 
