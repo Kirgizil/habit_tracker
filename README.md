@@ -38,7 +38,7 @@ The second part of the analytics platform allows the user to immediately know wh
 Since those are all standard libraries a healthy python 3.x installation should be able to run this code. I recommend downloading the folder 'habit_tracker' and saving this folder to a specific location. Then create a shortcut of 'habit_tracker.py' on your desktop to run the application via double clicking the shortcut. The application will be clear about the inputs needed to proceed.
 
 # Testing
-In case you want to further develop the code or want to make sure that the crucial parts of the application are running accurate, I put together a 'test.py' file which specifically looks at the following analytics functions:
+In case you want to further develop the code or want to make sure that the crucial parts of the application are running accurately, I put together a 'test.py' file which specifically looks at the following analytics functions:
 
 1. **test_daily_countdown_func:** This function is used to calculate current streak data of all habits and to only allow record logging (retrospective), editing, and deleting for a specified period.
 2. **test_seven_days_upwards_func:** This function is important for calculating the longest streak, the average streak, the total number of streaks, and the streak performance score of all weekly habits. Leap years are taken into account.
