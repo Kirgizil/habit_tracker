@@ -21,7 +21,7 @@ For the daily habit this is straight-forward. On the day a daily habit is record
 For weekly habits it is a bit more complicated. The first time you are recording on a weekly habit will put the streak of this habit to 0 weeks (you have recorded this habit, but only for a day). Only if you record this habit again in the next 1-7 days (or on all of the next 7 days) you will have a streak of 1 week. If you record this habit in any day (or all days) of the following week, the streak will be 2 weeks and so on. A weekly habit is broken, if the user is not recording in the following week **OR** if the distance between recordings is > 7 days. Example: If Tony is initially recording on his weekly habit on January 1st, and then again on January 8th, he will have a current streak of 1 week. If Tony now decides to be early and records again on January 9th (which is the first day in the following week), he will have a streak of 2 weeks. However, he can only obtain now a 3 weeks streak if he records on January 16th in the following week, as any day after that results in a >7 day gap. So, if Tony can't record on January 16th, but wants to record on January 18th instead to get a 3 week streak, he needs to add another recording on January 11th.
 
 # How to Install and run the Project
-**The appication comes with the following files:**
+**The application comes with the following files:**
 1. **habit_tracker.py** (main application)
 2. **db_modul.py** (contains calls to the sqlite3 database)
 3. **oop_modul.py** (contains all classes used within the application)
